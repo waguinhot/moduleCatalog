@@ -85,3 +85,5 @@ test('shold not be delete category' , function (){
     $response = $this->delete('api/catalog/category/delete/0');
     $response->assertStatus(404);
 });
+
+
