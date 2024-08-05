@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Models\Product;
+namespace App\Models\Employe;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Employe extends Model
 {
     use HasFactory;
+    protected $fillable =['name','cnpj','codigo'];
 }

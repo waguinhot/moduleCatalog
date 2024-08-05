@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Brand\BrandController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\Employe\EmployeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,7 @@ Route::get('/catalog/brand/unique/{id}', [BrandController::class,'getById'])->na
 Route::get('/catalog/brand', [BrandController::class,'index'])->name('brands');
 Route::post('/catalog/brand/store', [BrandController::class,'store'])->name('store.brand');
 Route::put('/catalog/brand/update/{id}', [BrandController::class,'update'])->name('update.brand');
+
+
+Route::get('/employe/all', [EmployeController::class,'index'])->name('get.employe');
+Route::post('/employe/store' , [EmployeController::class, 'store'])->name('store.employe');
